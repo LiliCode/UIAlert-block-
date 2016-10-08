@@ -16,6 +16,7 @@
 		221C27251D94DD470030A3A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221C27231D94DD470030A3A8 /* LaunchScreen.storyboard */; };
 		221C27301D94DD480030A3A8 /* UIAlert_ResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C272F1D94DD480030A3A8 /* UIAlert_ResponseTests.m */; };
 		221C273B1D94DD480030A3A8 /* UIAlert_ResponseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C273A1D94DD480030A3A8 /* UIAlert_ResponseUITests.m */; };
+		221C274A1D94DDCB0030A3A8 /* UIAlertView+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C27491D94DDCB0030A3A8 /* UIAlertView+Response.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		221C27361D94DD480030A3A8 /* UIAlert+ResponseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAlert+ResponseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		221C273A1D94DD480030A3A8 /* UIAlert_ResponseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlert_ResponseUITests.m; sourceTree = "<group>"; };
 		221C273C1D94DD480030A3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221C27481D94DDCB0030A3A8 /* UIAlertView+Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Response.h"; sourceTree = "<group>"; };
+		221C27491D94DDCB0030A3A8 /* UIAlertView+Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Response.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				221C27161D94DD470030A3A8 /* AppDelegate.m */,
 				221C27181D94DD470030A3A8 /* ViewController.h */,
 				221C27191D94DD470030A3A8 /* ViewController.m */,
+				221C27481D94DDCB0030A3A8 /* UIAlertView+Response.h */,
+				221C27491D94DDCB0030A3A8 /* UIAlertView+Response.m */,
 				221C271B1D94DD470030A3A8 /* Main.storyboard */,
 				221C27211D94DD470030A3A8 /* Assets.xcassets */,
 				221C27231D94DD470030A3A8 /* LaunchScreen.storyboard */,
@@ -210,6 +215,7 @@
 				TargetAttributes = {
 					221C270E1D94DD470030A3A8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LKFT65X5X2;
 					};
 					221C272A1D94DD480030A3A8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -273,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221C274A1D94DDCB0030A3A8 /* UIAlertView+Response.m in Sources */,
 				221C271A1D94DD470030A3A8 /* ViewController.m in Sources */,
 				221C27201D94DD470030A3A8 /* UIAlert_Response.xcdatamodeld in Sources */,
 				221C27171D94DD470030A3A8 /* AppDelegate.m in Sources */,
@@ -419,7 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 立 李 (97C789H853)";
 				INFOPLIST_FILE = "UIAlert+Response/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EH.UIAlert-Response";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "UIAlert+Response/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EH.UIAlert-Response";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
+#import "UIAlertView+Response.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,30 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
+
+- (IBAction)alert:(UIButton *)sender
+{
+    
+}
+
+
+
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
+
+
+
